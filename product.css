@@ -1,0 +1,141 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f9f9f9, #e3eefe);
+    margin: 0;
+    padding: 0;
+}
+
+
+#productDetails {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.product-image img {
+    width: 100%; 
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+
+.product-info {
+    flex: 1; 
+    margin-left: 20px;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 20px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#productDetails {
+    animation: fadeIn 1s ease-out;
+}
+.product-image img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+.product-info h1 {
+    position: relative;
+    display: inline-block;
+    color: #333;
+}
+
+.product-info h1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e74c3c;
+    transition: width 0.3s ease;
+}
+
+.product-info h1:hover::after {
+    width: 100%; 
+}
+
+.product-info h1 {
+    position: relative;
+    display: inline-block;
+    color: #333;
+}
+
+.product-info h1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e74c3c;
+    transition: width 0.3s ease;
+}
+
+.product-info h1:hover::after {
+    width: 100%; 
+}
+
+#btn{
+    background-color: black;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+#btn:hover{
+    transform:scale(1.1) ;
+    transition: 2s;
+}

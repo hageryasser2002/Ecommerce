@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <link rel="stylesheet" href="stylesheet2.css">
+    <link rel="stylesheet" href="product.css">
+    <title>Product Details</title>
+   
+</head>
+
+<body>
+    <header>
+        <ul style="list-style: none;">
+            <li><a id="storeName" href="./homepage.html">EzyShop</a></li>
+            <li><a class="link" href="#mainProducts">Home</a></li>
+            <li><a class="link" href="#footer">Contact</a></li>
+            <li>
+                <h1 id="h1">hello </h1>
+            </li>
+            <li><i class="fa-solid fa-cart-shopping" onclick="cartPage()"></i></li>
+            <li><a class="link" href="./login.html">Logout</a></li>
+        </ul>
+    </header>
+
+    <div id="productDetails">
+       
+        <div class="product-image">
+            <img id="productImg" src="" alt="Product Image">
+        </div>
+
+        <div class="product-info">
+            <h1 id="productTitle">Product Title</h1>
+            <p class="label">Price:</p>
+            <p class="price" id="productPrice">$0.00</p>
+            <p class="label">Description:</p>
+            <p class="description" id="productDescription">Product description goes here.</p>
+            <button id="btn">Add To Cart</button>
+        </div>
+    </div>
+    
+    <button id="backToTop"></button>
+
+    <footer id="footer">
+        <div class="container">
+            <img src="icon.jpg" width="40px" alt="">
+            <p>we are socials</p>
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <p> &copy; copyright 2021</p>
+    </footer> 
+
+    <script src="productDetails.js"></script>
+    <script src="homjs.js"></script>
+
+</body>
+
+</html>

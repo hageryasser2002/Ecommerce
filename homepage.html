@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesheet2.css">
+    <title>homepage</title>
+</head>
+
+<body>
+    <header>
+        <ul style="list-style: none;">
+            <li><a id="storeName" href="./homepage.html">EzyShop</a></li>
+            <li><a class="link" href="#mainProducts">Home</a></li>
+            <li><a class="link" href="#footer">Contact</a></li>
+            <li>
+                <h1 id="h1">hello </h1>
+            </li>
+            <li><i class="fa-solid fa-cart-shopping" onclick="cartPage()"></i></li>
+            <li><a class="link" href="./login.html">Logout</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="classtitle">
+            <h2 class="title">Exciting to Shop!</h2>
+            <i class="fa-solid fa-shop"></i>
+        </div>
+
+        <nav class="slider">
+            <button class="prevbtn" onclick="previous()">Previous</button>
+            <img id="imgprev" src="c.jpg" alt="">
+            <img id="" src="c2.jpg" alt="">
+            <img id="" src="c3.jpg" alt="">
+            <img id="" src="c4.jpg" alt="">
+            <img id="" src="c6.jpg" alt="">
+            <img id="" src="m1.jpg" alt="">
+            <img id="imginner" src="m2.jpg" alt="">
+            <button class="nextbtn" onclick="next()">Next</button>
+        </nav>
+
+        <section id="mainProducts">
+
+            <h2>Our Products</h2>
+            <div class="innerdiv">
+                <button id="showAllBtn">All</button>
+                <button id="showClothesBtn">Clothes</button>
+                <button id="showAccessoriesBtn">accessories</button>
+
+                <button id="showDevicesBtn">devices</button>
+            </div>
+        </section>
+        
+        <section id="allproducts">
+
+        </section>
+
+        <div id="arrowdiv">
+            <img src="arrows.png" class="arrowTop" width="40px" alt="">
+        </div>
+    </main>
+    
+  
+    <button id="backToTop"></button>
+    <footer id="footer">
+        <div class="container">
+
+            <img src="icon.jpg" width="40px" alt="">
+            <p>we are socials</p>
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+
+        </div>
+        <p> &copy; copyright 2021</p>
+    </footer>
+    <script src="homjs.js"></script>
+
+</body>
+
+</html>

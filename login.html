@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+    <link rel="icon"  href="./icon.jpg">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<h1 class="mainLabled" >Eccomerce Project</h1>
+	<div class="main">  	
+			<div class="login">
+				<form method="get" id="loginForm" action="homepage.html" >
+					<label class="labelLogin" >Login</label>
+
+					<input type="text" name="name" id="name" placeholder="User Name" required="">
+					<input id="email"name="email" placeholder="Email" required="">
+
+					<input type="password" name="psw" id="pswd" placeholder="Password" required="">
+					<label id="errorLength" style="color: red; text-align: center;display: flex; justify-content: center; display: none;font-family: 'Jost', sans-serif;">Password must be at least 3 characters</label>
+					<input type="password"  id="pswd2" placeholder="Confirm Password" required="">
+					
+					<button type="button" onclick="clicked(event)">Login</button>
+				</form>
+			</div>
+		
+	</div>
+	<script src="js_login.js"></script>
+</body>
+</html>
