@@ -135,7 +135,7 @@ function displayProducts(apiUrl) {
               console.log("done");
 
               localStorage.setItem("productId", product.id);
-              window.location.href = "productDetails.html";
+              window.location.href = "ProductDetails.html";
             });
             divIcons.append(iconAdd, iconShow);
 
